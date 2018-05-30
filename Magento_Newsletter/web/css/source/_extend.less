@@ -1,0 +1,18 @@
+//
+//  Common
+//  ---------------------------------------------
+
+& when (@media-common = true) {
+    .block.newsletter {
+        button.primary {
+            color: @text__dark;
+            background-color: @button__background;
+            border: 1px solid lighten(@button__background, 15%);
+
+            &:hover {
+                color: @text__dark;
+                background-color: @pallete-color5;
+            }
+        }
+    }
+}

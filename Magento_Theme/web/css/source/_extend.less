@@ -1,18 +1,34 @@
 //
 //  Theme variables
 //  ---------------------------------------------
-@pallete-color1: #1c3945;
-@pallete-color2: #7099aa;
-@pallete-color3: #a8ccdb;
-@pallete-color4: #cfe3eb;
-@pallete-color5: #698895;
+@pallete-color1: #db1020;
+@pallete-color2: #ffd700;
+@pallete-color3: #003e1f;
+@pallete-color4: #73ba9b;
+@pallete-color5: #ffffff;
+
+// @pallete-color1: #1c3945;
+// @pallete-color2: #7099aa;
+// @pallete-color3: #a8ccdb;
+// @pallete-color4: #cfe3eb;
+// @pallete-color5: #698895;
 
 @primary__color: @pallete-color1;
 @secondary__color: @pallete-color2;
 
-@header-panel__background-color: @pallete-color4;
+@header-panel__background-color: @pallete-color3;
+@header-panel__text-color: @pallete-color5;
 
 @footer__background-color: @pallete-color1;
+
+@footer-block__title-color: @pallete-color5;
+@footer-block__content-color: @pallete-color5;
+
+@footer-link__color: @pallete-color5;
+@footer-link__hover__color: @secondary__color;
+
+@footer-copyright__color: @pallete-color5;
+@footer-copyright__background-color: @footer__background-color;
 
 //
 //  Typography
@@ -24,23 +40,43 @@
 @font-family__oswald: 'Oswald', @font-family__sans-serif;
 @font-family__primary: @font-family__oswald;
 
+@text__color: @color-gray20;
+@text__light: @color-white;
+@text__dark : @color-black;
+@link__color: @color-blue2;
+
+//
+//  Buttons
+//  ---------------------------------------------
+@button__color: @text__dark;
+@button__hover__color: @text__dark;
+
+//  Primary button
+@button-primary__color: @text__light;
+@button-primary__hover__color: @text__dark;
+
 //
 //  Navigation variables
 //  ---------------------------------------------
 
-@navigation__background: @primary__color;
-@navigation-level0-item__color: @pallete-color4;
+@navigation__background: @pallete-color5;
+@navigation-level0-item__color: @text__color;
 
-@navigation-level0-item__active__color: @primary__color;
-@navigation-level0-item__active__background: @secondary__color;
+@navigation-level0-item__active__color: @link__color;
+@navigation-level0-item__active__background: @pallete-color4;
 
 //
 //  Desktop navigation
 //  ---------------------------------------------
-@navigation-desktop-level0-item__color: @pallete-color4;
+@navigation-desktop__background: @primary__color;
+@navigation-desktop__background__wide: @primary__color;
+@navigation-desktop-level0-item__color: @pallete-color5;
 
-@navigation-desktop-level0-item__hover__color: @primary__color;
+@navigation-desktop-level0-item__hover__color: @pallete-color5;
 @navigation-desktop-level0-item__hover__background: @secondary__color;
 
 @navigation-desktop-level0-item__active__color: @navigation-desktop-level0-item__hover__color;
 @navigation-desktop-level0-item__active__background: @navigation-desktop-level0-item__hover__background;
+
+@submenu-desktop-item__color: @text__color;
+@submenu-desktop__font-weight: @font-weight__regular;
